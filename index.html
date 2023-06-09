@@ -65,20 +65,80 @@
         <div class="model">
             <h2>git push -u origin main</h2>
             <p>Envia os arquivos para o repositório remoto, salvando eles no GITHUB.</p>
-    </div>
+        </div>
 
     <div class="model fase">
         <p>Agora veremos uma parte importantissima que são as Branchs, isso basicamente
         podemos dizer que são ramificações. Vamos entender com um exemplo:</p>
         <p>Imagine que tem um projeto que 3 pessoas ira trabalhar nele, ja tem a estrutura
-            um vai fazer o header da pagina outro um formulario de contato e outro o footer.
+            um vai fazer o header da pagina outro um formulario de contato e outro o footer.</p>
         <br>
         <p>Então pode ser criados as branchs e cada um trabalha na sua e depois pode
             juntar tudo na branch main.
         </p>
+    </div>
+
+    <div class="model">
+        <h2>git checkout -b " nome da branch "</h2>
+        <p>O -b indica a criação de uma nova branch, importante antes de criar uma branch estar com os commits anteriores feitos</p>
+    </div>
+
+    <div class="model">
+        <h2>git push --set-upstream origin " nome da branch "</h2>
+        <p>Este comando cria a branch no repositório remoto, porque se tentar fazer push antes dara erro, porque
+            não existe a branch remotamente ainda.
+        </p>
+        <br/>
+        <p>Agora pode alterar os arquivos do projeto realizar os commit e o push onde sera enviado para a branch as modificações. </p>
+    </div>
+
+    <div class="model fase">
+        <p>Agora veremos os comando para unir a branch criada com a main unindo os arquivos</p>
+    </div>
+
+    <div class="model">
+        <h2>git checkout main</h2>
+        <p>Agoara nao sera criado uma branch nova, só sera mudado de branch, saindo da que estava para a raiz</p>
+    </div>
+
+    <div class="model">
+        <h2>git brach</h2>
+        <p>Ve a lista com todas as branchs que tem no projeto com os nomes por isso tem de colocar nomes que faz sentido
+            ficando facil reconhecer.
         </p>
     </div>
+
+    <div class="model">
+        <h2>git merge " nome da branch "</h2>
+        <p>Vai pegar o código da branch e disponibilar na main as alterações. Ainda precisa passar isso para o repositorio
+            porque até então só esta na maquina este merge.
+        </p>
+    </div>
+
+    <div class="model">
+        <h2>git push</h2>
+        <p>Envia para o repositório remoto a branch que foi mergeada na main, deixou os codigos iguais na main e na branch</p>
+    </div>
+
+    <div class="model fase">
+        <p>Pegar um projeto d eum repositório para trabalhar nele.</p>
+    </div>
+
+    <div class="model">
+        <h2>git pull</h2>
+        <p>Pega todas as atualizações do remoto e traz para repositório local.</p>
+    </div>
+
+    <div class="model fase">
+        <p>Clonar um projeto de um repositório. Va no projeto e pega a URL na aba code.</p>
+    </div>
         
+    <div class="model">
+        <h2>git clone " URL copiada " nome do projeto</h2>
+        <p>Após isso o projeto vai estar na sua máquina vindo da branch mainonde pode alterar
+            ai depois faz o git commit -a -m "mensagem" e depois git push.
+        </p>
+    </div>
 
 
 
